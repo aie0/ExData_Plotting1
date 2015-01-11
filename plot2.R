@@ -13,7 +13,7 @@ plot2 = function(isSubGraph = FALSE, dataToUse = NULL) {
     }
     
     if (!isSubGraph)
-        startPlotToFile("./figure/plot2.png")
+        startPlotToFile("./plot2.png")
     with(data, plot(DateTime, Global_active_power, type = "l", xlab = "", ylab = yLabel))
     if (!isSubGraph)
         endPlotToFile()

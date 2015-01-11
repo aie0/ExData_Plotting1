@@ -9,7 +9,7 @@ source("./plot3.R")
 # plot4 - global reactive power per datetime
 plot4 = function() {    
     data = loadData()
-    startPlotToFile("./figure/plot4.png")
+    startPlotToFile("./plot4.png")
     par(mfcol=c(2,2))
     plot2(TRUE, data)
     plot3(TRUE, data)
